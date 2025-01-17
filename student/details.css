@@ -1,0 +1,80 @@
+body {
+    padding: 50px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+th {
+    width: 30px;
+}
+
+h4 {
+    color: #333;
+}
+
+.form-box {
+    width: 50%;
+    margin: auto;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+}
+
+.form-box h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #302b63;
+}
+
+button#logout-button, button#print-button {
+    position: absolute;
+    top: 10px;
+}
+
+button#logout-button {
+    left: 10px;
+}
+
+button#print-button {
+    right: 10px;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #302b63;
+    box-shadow: 0 0 5px rgba(48, 43, 99, 0.5);
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    border-color: #c0392b;
+    color: white;
+}
+
+.btn-success {
+    background-color: #27ae60;
+    border-color: #1e8449;
+    color: white;
+}
+
+.btn-danger:hover, .btn-success:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .form-box {
+        width: 90%;
+    }
+
+    button#logout-button, button#print-button {
+        position: static;
+        margin-bottom: 10px;
+    }
+}
